@@ -226,9 +226,40 @@
   /* citations stay readable but recede slightly */
   .cite { color: #57534a; }
 
-  figure.video {
+  figure.video, figure.photo {
     margin: 2.6rem 0;
   }
+
+  figure.photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+  }
+
+  figure.photo figcaption {
+    font-size: .9rem;
+    color: var(--muted);
+    margin-top: .7rem;
+    text-align: center;
+    font-style: italic;
+  }
+
+  figure.photo.portrait {
+    float: right;
+    width: min(46%, 17rem);
+    margin: .35rem 0 1.3rem 2rem;
+  }
+
+  @media (max-width: 640px) {
+    figure.photo.portrait {
+      float: none;
+      width: 100%;
+      margin: 2.4rem 0;
+    }
+  }
+
+  .part { clear: both; }
 
   .video-frame {
     position: relative;
@@ -364,6 +395,11 @@
 
 <main class="article" id="essay">
 
+  <figure class="photo portrait">
+    <img src="assets/dario.jpg" alt="Dario Madau examining watches at a dealer's desk" loading="lazy" width="750" height="1000">
+    <figcaption>The author at the dealer's desk.</figcaption>
+  </figure>
+
   <p>I spend a lot of my non-academic life around vintage watches. They are strange little objects when you stop to look at them: small, mostly mechanical, and built for the single purpose of telling a person where they currently are in a flow that nothing in the device itself is responsible for creating. A wristwatch does not produce time. It points at it. What it points at is the result of a much longer history than the watch itself, and looking at that history carefully turns out to require going back about as far as anything can be gone back.</p>
 
   <p>The earliest part of the story is not human and not even biological. It is the slow appearance, in the early universe, of physical regularities stable enough to be counted: stars, planets, the orbits and rotations that eventually give Earth a day and a year. Life then makes those regularities matter, by becoming the first kind of system that has to organise itself in time to stay alive. Humans inherit a body that is already a working clock and spend the next several thousand years externalising and globalising that capacity, into shared calendars, navigation instruments, railway timetables, time zones, and eventually small mechanical objects that read the time in every major city on Earth simultaneously. The line does not stop there. In the last few decades the same instruments and the same precision have been put to a new use, measuring the way humans are now changing planetary systems, and the question being asked of a clock has started to change again. The wristwatch on a wrist is a remarkable station on a line that is still being drawn.</p>
@@ -381,6 +417,11 @@
 
   <p>The Sun did one more thing for human timekeeping. It is part of a long line of stars that have, between them, manufactured almost every chemical element heavier than helium. The Sun itself is a second-generation star, formed from a cloud already enriched by earlier supernovae <span class="cite">(Origin Story, Ch. 2, "New Elements and Increasing Chemical Complexity: Threshold 3")</span>. When the solar system condensed, those elements concentrated into rocky planets and asteroid belts <span class="cite">(Origin Story, Ch. 3, "Threshold 4: From Molecules to Moons, Planets, and Solar Systems")</span>. The gold of a watch case is, on current evidence, produced predominantly in the rare neutron-star mergers that scatter heavy r-process elements through the galaxy. The iron and the steel of springs and gears come from the iron-group elements forged at the end of massive-star lives. The silicon of quartz oscillators and the synthetic sapphire of bearings and crystals are all, eventually, the dust of older stars <span class="cite">(Chaisson, <em>Cosmic Evolution</em>, ch. 3, on the buildup of complexity through stellar generations)</span>. A watch is, viewed from the right angle, an unusually organised piece of recycled supernova debris.</p>
 
+  <figure class="photo">
+    <img src="assets/nebula.jpg" alt="The Pillars of Creation, towers of interstellar gas and dust in the Eagle Nebula" loading="lazy" width="1400" height="1459">
+    <figcaption>Star-forming columns of gas and dust in the Eagle Nebula, the "Pillars of Creation". Image: NASA, ESA, and the Hubble Heritage Team (STScI/AURA), public domain.</figcaption>
+  </figure>
+
   <p>By this point in the long story, the physical scaffolding is in place. Stable stars, a stable Sun, a stable Earth, regular planetary cycles, and the elements that future clocks will be built from all exist. What is still missing is anything that can read these regularities, depend on them, or care about them. That step belongs to life.</p>
 
   <div class="part">
@@ -394,6 +435,11 @@
 
   <p>A first major shift in life's relationship with time arrived when some organisms learned to use sunlight directly. Photosynthesis tied biology to a stable external rhythm, the day-and-night cycle of an Earth rotating around its Sun <span class="cite">(Origin Story, Ch. 5, "Photosynthesis: An Energy Bonanza and a Revolution"; Spier, ch. 5, "Life and Energy Flows")</span>. Cyanobacteria, then plants, then the entire biosphere began organising their metabolism around an external pulse they had not generated and could not influence. The trace of that adjustment is still everywhere. Almost every cell of almost every organism on Earth has a circadian clock, a roughly twenty-four-hour oscillator built from a small set of genes and proteins, whose original function was to keep an internal schedule in step with the rotating planet. The molecular machinery underlying these clocks was characterised in detail by Jeffrey Hall, Michael Rosbash, and Michael Young, work recognised by the 2017 Nobel Prize in Physiology or Medicine. Long before humans started building escapements, the biosphere was running on clocks.</p>
 
+  <figure class="photo">
+    <img src="assets/terminator.jpg" alt="The day-night terminator line over Earth seen from the International Space Station" loading="lazy" width="1400" height="933">
+    <figcaption>The day-night line above the Gulf of Guinea, photographed from the International Space Station. The pulse every circadian clock on Earth is tuned to. Image: NASA, public domain.</figcaption>
+  </figure>
+
   <p>A second shift came with nervous systems. Once an organism could remember the recent past and form expectations about the near future, it could act on what had not yet happened. Memory and anticipation give a system a working model of time that is much richer than reaction to the present, and Deacon has argued that this is the point at which time becomes meaningful in a deeper sense, because the future starts to matter to something that can expect it <span class="cite">(Deacon, <em>Incomplete Nature</em>, ch. 12)</span>. Walker and Davies make a complementary point from information theory. Living systems are unusual because they process information about temporal order, not only matter and energy <span class="cite">(Walker &amp; Davies, "The Algorithmic Origins of Life," <em>Journal of the Royal Society Interface</em> 10, §3)</span>. In humans, those biological capacities are exceptionally developed, and they are part of what makes the next stretch of the story possible. A wristwatch is, in this longer view, an externalisation of capacities that life had already evolved. The cell synchronises. The brain anticipates. The watch is a device that takes both of these out of the body and puts them into a shared form that other people can read.</p>
 
   <div class="part">
@@ -404,6 +450,11 @@
   <p>Humans inherited from earlier life the ability to track rhythms and to imagine futures, but they also added something the rest of the biosphere did not have. Through language and symbolic thought, human communities could pass detailed knowledge about time across generations and refine it cumulatively. Christian calls this collective learning and treats it as the defining feature of the human threshold <span class="cite">(Origin Story, Ch. 7, "What Makes Us Different? Crossing Threshold 6")</span>. Information about seasonal migrations, lunar cycles, stellar positions, and ritual schedules no longer had to be rediscovered. It could be stored in story, song, gesture, eventually writing, and improved through use. Mental time travel let people coordinate hunts, plan migrations, and prepare rituals; calendars, schedules, and meeting points existed long before any mechanical clock.</p>
 
   <p>The first dedicated timekeeping devices were responses to a similar problem of coordination. A sundial uses the regular shadow of a gnomon to convert the Sun's diurnal motion into a numerical reading. Water clocks, or clepsydrae, used the rate of flow through a calibrated outlet to mark time when the sky was not cooperating, and in China, India, the Islamic world, and Europe they reached extraordinary sophistication, including Su Song's eleventh-century astronomical clock tower in Kaifeng. The Antikythera mechanism, recovered from a Greek shipwreck and dated to around the second century BCE, is more astonishing still. It is a bronze geared analogue computer that tracked the positions of the Sun and the Moon, predicted eclipses, and indicated the four-year cycle of the Olympic games <span class="cite">(Marchant, <em>Decoding the Heavens</em>, chs. 1&ndash;3)</span>. The mechanism is roughly as complex as a fine eighteenth-century clock and predates anything comparable in Europe by more than a thousand years. The general lesson is that the desire to mechanise time is much older than the mechanical clock.</p>
+
+  <figure class="photo">
+    <img src="assets/antikythera.jpg" alt="The largest surviving fragment of the Antikythera mechanism" loading="lazy" width="1036" height="924">
+    <figcaption>The largest surviving fragment of the Antikythera mechanism, National Archaeological Museum, Athens. Image: Marsyas, Wikimedia Commons, CC BY 2.5.</figcaption>
+  </figure>
 
   <p>The first major intensification of structured time as a collective practice came with agriculture. Farming required planting and harvesting at the correct moment, so seasonal cycles stopped being something a community could respond to flexibly and started being something it had to predict <span class="cite">(Origin Story, Ch. 8, "How Farming Transformed Human History")</span>. The archaeological record fills with tally bones, lunar markers, and stone alignments oriented to solstices and equinoxes. Long-term planning, storage, and the deferred reward of next year's harvest all rest on this.</p>
 
@@ -423,15 +474,25 @@
 
   <p>Patek Philippe produced the Reference 1415 from 1939 as the first wristwatch using Cottier's system. The Reference 2523, introduced around 1953, was the more refined version. Where the 1415 had a fixed bezel and the user rotated the city ring through the single crown, the 2523 added a second crown at ten o'clock that allowed the city ring to be adjusted independently of the rest of the dial, a system Cottier devised in 1953 and Patek Philippe patented in 1959 <span class="cite">(Swiss patent no. 340191; Collectability, "Inside the Movement: Louis Cottier")</span>. The case is larger, the visual presentation more confident, and on a small number of examples the centre of the dial carries a hand-painted cloisonné enamel map. Surviving variants depict North America, Europe, the Eurasian landmass, or South America in fired enamel, each one a small painting in its own right. Estimates of total production for the 2523 across all metal and dial variants run to fewer than one hundred pieces. The market has registered that scarcity emphatically: in May 2026 a yellow-gold example with a South America cloisonné dial, one of only two known in that configuration, sold at Phillips in Geneva for 7,961,000 Swiss francs, a record price for the reference <span class="cite">(Phillips, The Geneva Watch Auction: XXIII, Geneva, 9 May 2026, lot 27)</span>. The watch's reputation as one of the most desirable mid-century wristwatches rests partly on this scarcity and partly on what the dial physically displays.</p>
 
+  <figure class="photo">
+    <img src="assets/2523-phillips.jpg" alt="Patek Philippe Reference 2523 with cloisonné enamel South America dial" loading="lazy" width="1400" height="1606">
+    <figcaption>The Reference 2523 with cloisonné "South America" dial sold at Phillips, Geneva, on 9 May 2026 for a record 7,961,000 Swiss francs. Image: Phillips.</figcaption>
+  </figure>
+
   <p>The list of cities engraved on the city ring is a small political archive of the postwar period. The standard twenty-four-city set, common to many 2523 dials, includes Leopoldville rather than Kinshasa (the city was renamed in 1966), Saigon rather than Ho Chi Minh City (renamed in 1976), Salisbury rather than Harare (renamed in 1982), and Moscow as the reference for the Soviet Union. Different 2523 dial variants exist with slightly different city sets, occasionally substituting one African or South American city for another, and these variants now act as small markers of when the dial was made and for which market. The watch was produced by a Geneva firm in the 1950s, and it carries the geopolitical assumptions of that decade on its face. A 2523 with a 1950s city ring, set today, still works for the underlying time, but the words it uses to do so are a snapshot of a vanished political map. This kind of layering, of technical infrastructure and political memory in a single object, is exactly what makes the Reference 2523 worth choosing as the concrete example for a long history of time.</p>
 
-  <p>This winter I travelled to Hong Kong with the vintage watch dealer Jasper to view one particular Reference 2523 that was coming up for sale. The visit was partly to produce a short video and photographs for the dealer's record, and the video itself, which describes the dial, the city ring, and the mechanism in detail, is included here as a primary source <span class="cite">(Madau, "Patek Philippe Reference 2523," 2025)</span>. Handling the object in person made the historical layering above feel less academic. The case is heavy. The crowns turn with a particular small resistance. The city ring is clearly engraved with a list of cities that reads, on a 2025 Hong Kong morning, like a slightly faded record of who the world was understood to be seventy years ago.</p>
+  <figure class="photo">
+    <img src="assets/2523-jasper.jpg" alt="A Patek Philippe Reference 2523 world-time wristwatch on a blue background" loading="lazy" width="1400" height="1400">
+    <figcaption>The Reference 2523 photographed in Hong Kong for Jasper Lijfering of Amsterdam Vintage Watches.</figcaption>
+  </figure>
+
+  <p>This winter I travelled to Hong Kong with the vintage watch dealer Jasper Lijfering of Amsterdam Vintage Watches to view one particular Reference 2523 that was coming up for sale. The visit was partly to produce a short video and photographs for the dealer's record, and the video itself, which describes the dial, the city ring, and the mechanism in detail, is included here as a primary source <span class="cite">(Madau, "Patek Philippe Reference 2523," 2026)</span>. Handling the object in person made the historical layering above feel less academic. The case is heavy. The crowns turn with a particular small resistance. The city ring is clearly engraved with a list of cities that reads, on a 2025 Hong Kong morning, like a slightly faded record of who the world was understood to be seventy years ago.</p>
 
   <figure class="video">
     <div class="video-frame">
       <iframe src="https://www.youtube-nocookie.com/embed/K_EXcS7uG4E" title="Patek Philippe Reference 2523 (Madau, 2025)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
-    <figcaption>Madau, "Patek Philippe Reference 2523" (2025). Recorded in Hong Kong; cited in the text as a primary source.</figcaption>
+    <figcaption>Video: Dario Madau for Jasper Lijfering of Amsterdam Vintage Watches. Hong Kong, May 2026.</figcaption>
   </figure>
 
   <p>The Reference 2523 is therefore not chosen here as the climax of the history of time. It is chosen because, when held up to the light, it makes most of the prior history of timekeeping visible at once: the metals of stars, the cycles of Earth, the biological rhythms of the wearer, the calendars of agrarian states, the monastic mechanical clock, the longitude prize, the railway noon, the 1884 conference, the postwar map. Many other twentieth-century wristwatches do similar work. This one happens to do it especially densely.</p>
@@ -442,6 +503,11 @@
   </div>
 
   <p>The infrastructure that produced wristwatches like the Reference 2523 has not stopped developing. It has acquired a use that twentieth-century watchmakers could not have anticipated. The Anthropocene is the proposition that human activity has become a geological force, shifting Earth systems on time scales comparable to natural processes that previously took far longer <span class="cite">(Origin Story, Ch. 11, "The Great Acceleration")</span>. Recognising it depends on precise, long-running, dated measurement. The Mauna Loa carbon dioxide record, begun by Charles Keeling in 1958 and still running, shows a continuous and accelerating rise; Antarctic ice cores extend a similar record back roughly 800,000 years. Sea-level series, satellite temperature records, biodiversity surveys, and stratigraphic markers do similar work. In July 2023, the Anthropocene Working Group, a working group of the Subcommission on Quaternary Stratigraphy within the International Commission on Stratigraphy, voted to recommend Crawford Lake in Ontario as the "golden spike" for the start of the Anthropocene epoch, with a proposed start date around 1952, identified in lake sediments by plutonium fallout from atmospheric nuclear testing <span class="cite">(Waters et al., "The Anthropocene is functionally and stratigraphically distinct from the Holocene," <em>Science</em> 351, 2016, §discussion of GSSP candidates)</span>. The proposal was rejected by the parent Subcommission on Quaternary Stratigraphy in March 2024, leaving the formal stratigraphic Anthropocene contested even at the basic question of when it should be said to begin. That contestation is itself a small reminder that the Anthropocene is, among other things, an unresolved problem in timekeeping.</p>
+
+  <figure class="photo">
+    <img src="assets/keeling.png" alt="The Keeling curve: monthly mean CO2 concentration at Mauna Loa, 1958 to 2025" loading="lazy" width="1400" height="1400">
+    <figcaption>The Keeling curve: monthly mean carbon dioxide concentration measured at Mauna Loa, 1958&ndash;2025. Chart: Oeneis, Wikimedia Commons, CC BY-SA 4.0; data NOAA and Scripps.</figcaption>
+  </figure>
 
   <p>Steffen and colleagues describe the post-1950 surge in human impact as the "Great Acceleration," precisely because it appears as a synchronised steepening of curves across many independent indicators, energy use, fertiliser consumption, surface temperature, ocean acidification, in the same period <span class="cite">(Steffen et al. 2015, "The trajectory of the Anthropocene: The Great Acceleration")</span>. Rockström and colleagues introduced the planetary boundaries framework, defining a "safe operating space for humanity" within which Earth systems remain stable enough for civilisation as currently practised <span class="cite">(Rockström et al. 2009, "A safe operating space for humanity")</span>. A 2023 assessment argues that six of the nine boundaries have already been crossed <span class="cite">(Richardson et al. 2023, "Earth beyond six of nine planetary boundaries")</span>.</p>
 
@@ -487,7 +553,7 @@
       <li>Collectability (Reardon, J.). <a href="https://collectability.com/learn/inside-the-movement-louis-cottier/">"Inside the Movement: Louis Cottier."</a> On Cottier's 1931 Heures Universelles mechanism, the ~380 movements delivered to Patek Philippe between 1937 and 1965, and the two-crown system devised in 1953 and patented in 1959 (Swiss patent no. 340191).</li>
       <li>Patek Philippe Museum, Geneva. Permanent collection: the earliest Heures Universelles wristwatches (refs. 96 HU, 515 HU, 542 HU, 1937) and Louis Cottier's reconstructed workshop.</li>
       <li>Phillips. <a href="https://www.phillips.com/detail/patek-philippe/231940"><em>The Geneva Watch Auction: XXIII</em>, Geneva, 9 May 2026, lot 27</a>: Patek Philippe Reference 2523, 18k yellow gold, cloisonné enamel "South America" dial (1953), realised CHF 7,961,000.</li>
-      <li>Madau, D. (2025). <a href="https://www.youtube.com/watch?v=K_EXcS7uG4E">"Patek Philippe Reference 2523."</a> Video for the dealer Jasper, recorded in Hong Kong.</li>
+      <li>Madau, D. (2026). <a href="https://www.youtube.com/watch?v=K_EXcS7uG4E">"Patek Philippe Reference 2523."</a> Video produced for Jasper Lijfering, Amsterdam Vintage Watches; recorded in Hong Kong.</li>
       <li>Waters, C. N. et al. (2016). "The Anthropocene is functionally and stratigraphically distinct from the Holocene." <em>Science</em> 351, 137.</li>
       <li>Anthropocene Working Group (2023). Vote in favour of Crawford Lake, Ontario, as the proposed Global Boundary Stratotype Section and Point (GSSP) for the Anthropocene.</li>
       <li>Steffen, W., Broadgate, W., Deutsch, L., Gaffney, O., &amp; Ludwig, C. (2015). "The trajectory of the Anthropocene: The Great Acceleration." <em>The Anthropocene Review</em> 2(1), 81&ndash;98.</li>
